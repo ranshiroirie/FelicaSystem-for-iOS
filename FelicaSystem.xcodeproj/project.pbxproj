@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781D847A2737C0BB0071C9FF /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D84792737C0BB0071C9FF /* HistoryItem.swift */; };
+		781D847D2737D02F0071C9FF /* DatabaseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D847C2737D02F0071C9FF /* DatabaseCardView.swift */; };
+		781D847F2737D5590071C9FF /* DatabaseMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D847E2737D5590071C9FF /* DatabaseMainView.swift */; };
+		781D84842737D6830071C9FF /* DeviceListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D84832737D6830071C9FF /* DeviceListCardView.swift */; };
+		781D84862737D69C0071C9FF /* DeviceListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D84852737D69C0071C9FF /* DeviceListItem.swift */; };
+		781D84892738207A0071C9FF /* AccountMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D8488273820790071C9FF /* AccountMainView.swift */; };
+		78507C3E273687E200E6A13D /* FelicaSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C3D273687E200E6A13D /* FelicaSystemApp.swift */; };
+		78507C40273687E200E6A13D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C3F273687E200E6A13D /* ContentView.swift */; };
+		78507C42273687E600E6A13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78507C41273687E600E6A13D /* Assets.xcassets */; };
+		78507C45273687E600E6A13D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78507C44273687E600E6A13D /* Preview Assets.xcassets */; };
+		78507C4F273687E600E6A13D /* FelicaSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C4E273687E600E6A13D /* FelicaSystemTests.swift */; };
+		78507C59273687E700E6A13D /* FelicaSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C58273687E700E6A13D /* FelicaSystemUITests.swift */; };
+		78507C5B273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C5A273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift */; };
+		78507C6D273688EF00E6A13D /* ReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C6C273688EF00E6A13D /* ReaderMainView.swift */; };
+		78EE0D752737B04F005B5802 /* ReaderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D742737B04F005B5802 /* ReaderInfoView.swift */; };
+		78EE0D772737B0C4005B5802 /* DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D762737B0C4005B5802 /* DeviceCardView.swift */; };
+		78EE0D792737B0D6005B5802 /* HistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D782737B0D6005B5802 /* HistoryCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78507C4B273687E600E6A13D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78507C32273687E200E6A13D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78507C39273687E200E6A13D;
+			remoteInfo = FelicaSystem;
+		};
+		78507C55273687E600E6A13D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78507C32273687E200E6A13D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78507C39273687E200E6A13D;
+			remoteInfo = FelicaSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		781D84792737C0BB0071C9FF /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		781D847C2737D02F0071C9FF /* DatabaseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseCardView.swift; sourceTree = "<group>"; };
+		781D847E2737D5590071C9FF /* DatabaseMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMainView.swift; sourceTree = "<group>"; };
+		781D84832737D6830071C9FF /* DeviceListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCardView.swift; sourceTree = "<group>"; };
+		781D84852737D69C0071C9FF /* DeviceListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListItem.swift; sourceTree = "<group>"; };
+		781D8488273820790071C9FF /* AccountMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMainView.swift; sourceTree = "<group>"; };
+		78507C3A273687E200E6A13D /* FelicaSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelicaSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78507C3D273687E200E6A13D /* FelicaSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemApp.swift; sourceTree = "<group>"; };
+		78507C3F273687E200E6A13D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78507C41273687E600E6A13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78507C44273687E600E6A13D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78507C4A273687E600E6A13D /* FelicaSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelicaSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78507C4E273687E600E6A13D /* FelicaSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemTests.swift; sourceTree = "<group>"; };
+		78507C54273687E600E6A13D /* FelicaSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelicaSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78507C58273687E700E6A13D /* FelicaSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemUITests.swift; sourceTree = "<group>"; };
+		78507C5A273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78507C6C273688EF00E6A13D /* ReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderMainView.swift; sourceTree = "<group>"; };
+		78EE0D742737B04F005B5802 /* ReaderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderInfoView.swift; sourceTree = "<group>"; };
+		78EE0D762737B0C4005B5802 /* DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCardView.swift; sourceTree = "<group>"; };
+		78EE0D782737B0D6005B5802 /* HistoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78507C37273687E200E6A13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C47273687E600E6A13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C51273687E600E6A13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		781D847B2737CFA70071C9FF /* History */ = {
+			isa = PBXGroup;
+			children = (
+				78EE0D782737B0D6005B5802 /* HistoryCardView.swift */,
+				781D84792737C0BB0071C9FF /* HistoryItem.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		781D84802737D5CE0071C9FF /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				781D84832737D6830071C9FF /* DeviceListCardView.swift */,
+				781D84852737D69C0071C9FF /* DeviceListItem.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		781D84872737D88A0071C9FF /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				781D84802737D5CE0071C9FF /* Device */,
+				781D847B2737CFA70071C9FF /* History */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
+		78507C31273687E200E6A13D = {
+			isa = PBXGroup;
+			children = (
+				78507C3C273687E200E6A13D /* FelicaSystem */,
+				78507C4D273687E600E6A13D /* FelicaSystemTests */,
+				78507C57273687E700E6A13D /* FelicaSystemUITests */,
+				78507C3B273687E200E6A13D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78507C3B273687E200E6A13D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78507C3A273687E200E6A13D /* FelicaSystem.app */,
+				78507C4A273687E600E6A13D /* FelicaSystemTests.xctest */,
+				78507C54273687E600E6A13D /* FelicaSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78507C3C273687E200E6A13D /* FelicaSystem */ = {
+			isa = PBXGroup;
+			children = (
+				78507C682736882600E6A13D /* Model */,
+				78507C672736882100E6A13D /* View */,
+				78507C3D273687E200E6A13D /* FelicaSystemApp.swift */,
+				78507C41273687E600E6A13D /* Assets.xcassets */,
+				78507C43273687E600E6A13D /* Preview Content */,
+			);
+			path = FelicaSystem;
+			sourceTree = "<group>";
+		};
+		78507C43273687E600E6A13D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78507C44273687E600E6A13D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78507C4D273687E600E6A13D /* FelicaSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				78507C4E273687E600E6A13D /* FelicaSystemTests.swift */,
+			);
+			path = FelicaSystemTests;
+			sourceTree = "<group>";
+		};
+		78507C57273687E700E6A13D /* FelicaSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78507C58273687E700E6A13D /* FelicaSystemUITests.swift */,
+				78507C5A273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift */,
+			);
+			path = FelicaSystemUITests;
+			sourceTree = "<group>";
+		};
+		78507C672736882100E6A13D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				781D84872737D88A0071C9FF /* ListItem */,
+				78507C6B273688C300E6A13D /* Account */,
+				78507C6A2736888300E6A13D /* Database */,
+				78507C692736887500E6A13D /* Reader */,
+				78507C3F273687E200E6A13D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78507C682736882600E6A13D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78507C692736887500E6A13D /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				78EE0D742737B04F005B5802 /* ReaderInfoView.swift */,
+				78507C6C273688EF00E6A13D /* ReaderMainView.swift */,
+				78EE0D762737B0C4005B5802 /* DeviceCardView.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		78507C6A2736888300E6A13D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				781D847C2737D02F0071C9FF /* DatabaseCardView.swift */,
+				781D847E2737D5590071C9FF /* DatabaseMainView.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		78507C6B273688C300E6A13D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				781D8488273820790071C9FF /* AccountMainView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78507C39273687E200E6A13D /* FelicaSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78507C5E273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystem" */;
+			buildPhases = (
+				78507C36273687E200E6A13D /* Sources */,
+				78507C37273687E200E6A13D /* Frameworks */,
+				78507C38273687E200E6A13D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FelicaSystem;
+			productName = FelicaSystem;
+			productReference = 78507C3A273687E200E6A13D /* FelicaSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78507C49273687E600E6A13D /* FelicaSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78507C61273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystemTests" */;
+			buildPhases = (
+				78507C46273687E600E6A13D /* Sources */,
+				78507C47273687E600E6A13D /* Frameworks */,
+				78507C48273687E600E6A13D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78507C4C273687E600E6A13D /* PBXTargetDependency */,
+			);
+			name = FelicaSystemTests;
+			productName = FelicaSystemTests;
+			productReference = 78507C4A273687E600E6A13D /* FelicaSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78507C53273687E600E6A13D /* FelicaSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78507C64273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystemUITests" */;
+			buildPhases = (
+				78507C50273687E600E6A13D /* Sources */,
+				78507C51273687E600E6A13D /* Frameworks */,
+				78507C52273687E600E6A13D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78507C56273687E600E6A13D /* PBXTargetDependency */,
+			);
+			name = FelicaSystemUITests;
+			productName = FelicaSystemUITests;
+			productReference = 78507C54273687E600E6A13D /* FelicaSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78507C32273687E200E6A13D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					78507C39273687E200E6A13D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					78507C49273687E600E6A13D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 78507C39273687E200E6A13D;
+					};
+					78507C53273687E600E6A13D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 78507C39273687E200E6A13D;
+					};
+				};
+			};
+			buildConfigurationList = 78507C35273687E200E6A13D /* Build configuration list for PBXProject "FelicaSystem" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78507C31273687E200E6A13D;
+			productRefGroup = 78507C3B273687E200E6A13D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78507C39273687E200E6A13D /* FelicaSystem */,
+				78507C49273687E600E6A13D /* FelicaSystemTests */,
+				78507C53273687E600E6A13D /* FelicaSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78507C38273687E200E6A13D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78507C45273687E600E6A13D /* Preview Assets.xcassets in Resources */,
+				78507C42273687E600E6A13D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C48273687E600E6A13D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C52273687E600E6A13D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78507C36273687E200E6A13D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781D84842737D6830071C9FF /* DeviceListCardView.swift in Sources */,
+				78EE0D772737B0C4005B5802 /* DeviceCardView.swift in Sources */,
+				78EE0D792737B0D6005B5802 /* HistoryCardView.swift in Sources */,
+				781D847A2737C0BB0071C9FF /* HistoryItem.swift in Sources */,
+				781D847D2737D02F0071C9FF /* DatabaseCardView.swift in Sources */,
+				781D84892738207A0071C9FF /* AccountMainView.swift in Sources */,
+				78507C40273687E200E6A13D /* ContentView.swift in Sources */,
+				78EE0D752737B04F005B5802 /* ReaderInfoView.swift in Sources */,
+				78507C3E273687E200E6A13D /* FelicaSystemApp.swift in Sources */,
+				781D847F2737D5590071C9FF /* DatabaseMainView.swift in Sources */,
+				78507C6D273688EF00E6A13D /* ReaderMainView.swift in Sources */,
+				781D84862737D69C0071C9FF /* DeviceListItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C46273687E600E6A13D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78507C4F273687E600E6A13D /* FelicaSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78507C50273687E600E6A13D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78507C59273687E700E6A13D /* FelicaSystemUITests.swift in Sources */,
+				78507C5B273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78507C4C273687E600E6A13D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78507C39273687E200E6A13D /* FelicaSystem */;
+			targetProxy = 78507C4B273687E600E6A13D /* PBXContainerItemProxy */;
+		};
+		78507C56273687E600E6A13D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78507C39273687E200E6A13D /* FelicaSystem */;
+			targetProxy = 78507C55273687E600E6A13D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78507C5C273687E700E6A13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78507C5D273687E700E6A13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78507C5F273687E700E6A13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FelicaSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78507C60273687E700E6A13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FelicaSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78507C62273687E700E6A13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FelicaSystem.app/FelicaSystem";
+			};
+			name = Debug;
+		};
+		78507C63273687E700E6A13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FelicaSystem.app/FelicaSystem";
+			};
+			name = Release;
+		};
+		78507C65273687E700E6A13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FelicaSystem;
+			};
+			name = Debug;
+		};
+		78507C66273687E700E6A13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3PY2R76UZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ranshiro.FelicaSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FelicaSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78507C35273687E200E6A13D /* Build configuration list for PBXProject "FelicaSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78507C5C273687E700E6A13D /* Debug */,
+				78507C5D273687E700E6A13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78507C5E273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78507C5F273687E700E6A13D /* Debug */,
+				78507C60273687E700E6A13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78507C61273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78507C62273687E700E6A13D /* Debug */,
+				78507C63273687E700E6A13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78507C64273687E700E6A13D /* Build configuration list for PBXNativeTarget "FelicaSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78507C65273687E700E6A13D /* Debug */,
+				78507C66273687E700E6A13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78507C32273687E200E6A13D /* Project object */;
+}
