@@ -25,7 +25,7 @@ struct DatabaseMainView: View {
                     DatabaseCardView()
                     DeviceListCardView()
                     HistoryCardView()
-                    Spacer()
+                    Spacer(minLength: 80.0)
                 }
             }
         }

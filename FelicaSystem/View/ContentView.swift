@@ -8,82 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection: Tab = .reader
+    @State private var selection: TabItem = .reader
     
     var body: some View {
-        TabView(selection: $selection) {
-            ReaderInfoView()
-                .tabItem{
-                    let tabReader : Tab = .reader
-                    Text(tabReader.label)
-                        .foregroundColor(Color(selection == tabReader ? tabReader.activeColor : "textcolor_main" ))
-                    Image(selection == tabReader ? tabReader.activeImage : tabReader.disactiveImage)
-                        .padding(.vertical,8.0)
-                }
-                .tag(Tab.reader)
+        ZStack {
+            TabView(selection: $selection) {
+                ReaderInfoView()
+                    .tag(TabItem.reader)
+                DatabaseMainView()
+                    .tag(TabItem.database)
+                AccountMainView()
+                    .tag(TabItem.account)
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
-            DatabaseMainView()
-                .tabItem{
-                    let tabDatabase : Tab = .database
-                    Text(tabDatabase.label)
-                        .foregroundColor(Color(selection == tabDatabase ? tabDatabase.activeColor : "textcolor_main" ))
-                    Image(selection == tabDatabase ? tabDatabase.activeImage : tabDatabase.disactiveImage)
-                        .padding(.vertical,8.0)
+            VStack{
+                Spacer()
+                HStack {
+                    Spacer()
+                    ForEach(TabItem.allCases, id: \.self) { tabItem in
+                        TabItemView(tabItem: tabItem, selected: $selection)
+                        Spacer()
+                    }
                 }
-                .tag(Tab.database)
-            AccountMainView()
-                .tabItem{
-                    let tabAccount : Tab = .account
-                    Text(tabAccount.label)
-                        .foregroundColor(Color(selection == tabAccount ? tabAccount.activeColor : "textcolor_main" ))
-                    Image(selection == tabAccount ? tabAccount.activeImage : tabAccount.disactiveImage)
-                        .padding(.vertical,8.0)
-                }
-                .tag(Tab.account)
+                .padding(.vertical, 16.0)
+                .padding(.horizontal, 32.0)
+                .background(Color("colorCardView").clipShape(Capsule()))
+                .compositingGroup()
+            }
+            .padding(16.0)
+            .shadow(radius: 8.0)
+            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
         }
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-enum Tab {
-    case reader
-    case database
-    case account
-    
-    var label: String {
-        switch self {
-        case .reader: return "読み取り"
-        case .database: return "データベース"
-        case .account: return "アカウント"
-        }
-    }
-    
-    var activeColor: String {
-        switch self {
-        case .reader: return "colorGreenPrimary"
-        case .database: return "colorPinkPrimary"
-        case .account: return "colorBluePrimary"
-        }
-    }
-    
-    var activeImage: String {
-        switch self {
-        case .reader: return "tab_reader_active"
-        case .database: return "tab_database_active"
-        case .account: return "tab_account_active"
-        }
-    }
-    
-    var disactiveImage: String {
-        switch self {
-        case .reader: return "tab_reader_disactive"
-        case .database: return "tab_database_disactive"
-        case .account: return "tab_account_disactive"
-        }
     }
 }

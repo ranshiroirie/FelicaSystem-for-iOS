@@ -30,7 +30,7 @@ struct ReaderInfoView: View {
                 VStack(spacing: 16.0){
                     DeviceCardView()
                     HistoryCardView()
-                    Spacer()
+                    Spacer(minLength: 80.0)
                 }
             }
         }

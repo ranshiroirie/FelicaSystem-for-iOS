@@ -13,6 +13,8 @@
 		781D84842737D6830071C9FF /* DeviceListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D84832737D6830071C9FF /* DeviceListCardView.swift */; };
 		781D84862737D69C0071C9FF /* DeviceListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D84852737D69C0071C9FF /* DeviceListItem.swift */; };
 		781D84892738207A0071C9FF /* AccountMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D8488273820790071C9FF /* AccountMainView.swift */; };
+		781D848D273972810071C9FF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D848C273972810071C9FF /* TabItem.swift */; };
+		781D848F273973200071C9FF /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D848E273973200071C9FF /* TabItemView.swift */; };
 		78507C3E273687E200E6A13D /* FelicaSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C3D273687E200E6A13D /* FelicaSystemApp.swift */; };
 		78507C40273687E200E6A13D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C3F273687E200E6A13D /* ContentView.swift */; };
 		78507C42273687E600E6A13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78507C41273687E600E6A13D /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		781D84832737D6830071C9FF /* DeviceListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCardView.swift; sourceTree = "<group>"; };
 		781D84852737D69C0071C9FF /* DeviceListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListItem.swift; sourceTree = "<group>"; };
 		781D8488273820790071C9FF /* AccountMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMainView.swift; sourceTree = "<group>"; };
+		781D848C273972810071C9FF /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		781D848E273973200071C9FF /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		78507C3A273687E200E6A13D /* FelicaSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelicaSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78507C3D273687E200E6A13D /* FelicaSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemApp.swift; sourceTree = "<group>"; };
 		78507C3F273687E200E6A13D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				78507C6A2736888300E6A13D /* Database */,
 				78507C692736887500E6A13D /* Reader */,
 				78507C3F273687E200E6A13D /* ContentView.swift */,
+				781D848E273973200071C9FF /* TabItemView.swift */,
+				781D848C273972810071C9FF /* TabItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,11 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				781D84842737D6830071C9FF /* DeviceListCardView.swift in Sources */,
+				781D848F273973200071C9FF /* TabItemView.swift in Sources */,
 				78EE0D772737B0C4005B5802 /* DeviceCardView.swift in Sources */,
 				78EE0D792737B0D6005B5802 /* HistoryCardView.swift in Sources */,
 				781D847A2737C0BB0071C9FF /* HistoryItem.swift in Sources */,
 				781D847D2737D02F0071C9FF /* DatabaseCardView.swift in Sources */,
 				781D84892738207A0071C9FF /* AccountMainView.swift in Sources */,
+				781D848D273972810071C9FF /* TabItem.swift in Sources */,
 				78507C40273687E200E6A13D /* ContentView.swift in Sources */,
 				78EE0D752737B04F005B5802 /* ReaderInfoView.swift in Sources */,
 				78507C3E273687E200E6A13D /* FelicaSystemApp.swift in Sources */,
