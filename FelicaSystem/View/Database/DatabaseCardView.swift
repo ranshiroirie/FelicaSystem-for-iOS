@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct DatabaseCardView: View {
+    @State private var isOnline = true
     var body: some View {
         VStack{
             VStack(alignment: .leading, spacing: 16.0) {
                 VStack(alignment: .leading){
                     Text("データベース名")
-                        .foregroundColor(Color.white)
+                        .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                         .font(.caption)
                     Text("DATABASE NAME")
                         .fontWeight(.medium)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                         .font(.title)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -25,38 +26,38 @@ struct DatabaseCardView: View {
                     VStack(alignment: .leading, spacing: 16.0){
                         VStack(alignment: .leading){
                             Text("IPアドレス")
-                                .foregroundColor(Color.white)
+                                .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                                 .font(.caption)
                             Text("XXX.XXX.XXX.XXX")
                                 .fontWeight(.bold)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                                 .font(.footnote)
                                 .lineLimit(1)
                         }
                         VStack(alignment: .leading){
                             Text("最終更新")
-                                .foregroundColor(Color.white)
+                                .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                                 .font(.caption)
                             Text("YYYY-MM-DD HH:MM")
                                 .fontWeight(.bold)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                                 .font(.footnote)
                                 .lineLimit(1)
                         }
                     }
                     VStack(alignment: .leading){
                         Text("ステータス")
-                            .foregroundColor(Color.white)
+                            .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                             .font(.caption)
-                        Text("オンライン")
+                        Text(isOnline == true ? "オンライン" : "オフライン")
                             .fontWeight(.bold)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(isOnline == true ? Color.white : Color("colorTextOffline"))
                             .font(.footnote)
                             .lineLimit(1)
                     }
                     Spacer()
                     Button{
-                        
+                        self.isOnline.toggle()
                     }label:{
                         Image("update_icon")
                     }
@@ -68,7 +69,7 @@ struct DatabaseCardView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
             .padding(16.0)
-            .background(Color("colorPinkPrimary"))
+            .background(isOnline == true ? Color("colorPinkPrimary") : Color("colorCardOffline"))
             .cornerRadius(16.0)
             .shadow(radius: 8.0)
         }

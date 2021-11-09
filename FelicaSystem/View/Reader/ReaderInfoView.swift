@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ReaderInfoView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0){
                 HStack{
                     Button{
-                        
+                        self.presentationMode.wrappedValue.dismiss()
                     }label:{
                         Image("back_arrow")
                             .padding(16.0)
@@ -34,6 +36,7 @@ struct ReaderInfoView: View {
                 }
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

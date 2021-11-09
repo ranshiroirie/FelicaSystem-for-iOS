@@ -1,57 +1,49 @@
 //
-//  DeviceCardView.swift
+//  AccountCardView.swift
 //  FelicaSystem
 //
-//  Created by 入江嵐士郎 on 2021/11/07.
+//  Created by 入江嵐士郎 on 2021/11/09.
 //
 
 import SwiftUI
 
-struct DeviceCardView: View {
+struct AccountCardView: View {
     var body: some View {
         VStack{
             VStack(alignment: .leading, spacing: 16.0) {
                 VStack(alignment: .leading){
-                    Text("機器名")
+                    Text("アカウント名")
                         .foregroundColor(Color.white)
                         .font(.caption)
-                    Text("DEVICE NAME")
+                    Text("ACCOUNT NAME")
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
                         .font(.title)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                HStack(spacing: 16.0){
-                    VStack(alignment: .leading, spacing: 16.0){
-                        VStack(alignment: .leading){
-                            Text("ID")
-                                .foregroundColor(Color.white)
-                                .font(.caption)
-                            Text("XXXXXXXXXXXXXXXX")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.white)
-                                .font(.caption)
-                        }
-                        VStack(alignment: .leading){
-                            Text("SYS")
-                                .foregroundColor(Color.white)
-                                .font(.caption)
-                            Text("XXXX")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.white)
-                                .font(.caption)
-                        }
+                VStack(alignment: .leading,spacing: 16.0){
+                    VStack(alignment: .leading){
+                        Text("アカウントID")
+                            .foregroundColor(Color.white)
+                            .font(.caption)
+                        Text(verbatim:"abcdef@123.com")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .font(.footnote)
+                            .lineLimit(1)
                     }
-                    VStack(alignment: .leading, spacing: 16.0) {
+                    HStack{
                         VStack(alignment: .leading){
-                            Text("PMM")
+                            Text("種別")
                                 .foregroundColor(Color.white)
                                 .font(.caption)
-                            Text("XXXXXXXXXXXXXXXX")
+                            Text("Admin")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
-                                .font(.caption)
+                                .font(.footnote)
+                                .lineLimit(1)
                         }
+                        Spacer()
                         VStack(alignment: .leading){
                             Text("登録日時")
                                 .foregroundColor(Color.white)
@@ -60,13 +52,14 @@ struct DeviceCardView: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .font(.footnote)
+                                .lineLimit(1)
                         }
                     }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
             .padding(16.0)
-            .background(Color("colorGreenPrimary"))
+            .background(Color("colorBluePrimary"))
             .cornerRadius(16.0)
             .shadow(radius: 8.0)
         }
@@ -74,8 +67,8 @@ struct DeviceCardView: View {
     }
 }
 
-struct DeviceCardView_Previews: PreviewProvider {
+struct AccountCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceCardView()
+        AccountCardView()
     }
 }

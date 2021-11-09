@@ -10,17 +10,22 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection: TabItem = .reader
     
+    init(){
+        //タブ背景非表示
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().shadowImage = UIImage()
+    }
+    
     var body: some View {
         ZStack {
             TabView(selection: $selection) {
-                ReaderInfoView()
+                ReaderMainView()
                     .tag(TabItem.reader)
                 DatabaseMainView()
                     .tag(TabItem.database)
                 AccountMainView()
                     .tag(TabItem.account)
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             VStack{
                 Spacer()
@@ -31,7 +36,7 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-                .padding(.vertical, 16.0)
+                .padding(.vertical, 10.0)
                 .padding(.horizontal, 32.0)
                 .background(Color("colorCardView").clipShape(Capsule()))
                 .compositingGroup()

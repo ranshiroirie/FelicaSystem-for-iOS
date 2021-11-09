@@ -23,6 +23,7 @@
 		78507C59273687E700E6A13D /* FelicaSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C58273687E700E6A13D /* FelicaSystemUITests.swift */; };
 		78507C5B273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C5A273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift */; };
 		78507C6D273688EF00E6A13D /* ReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78507C6C273688EF00E6A13D /* ReaderMainView.swift */; };
+		78D34ED2273AA81F002B6620 /* AccountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D34ED1273AA81F002B6620 /* AccountCardView.swift */; };
 		78EE0D752737B04F005B5802 /* ReaderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D742737B04F005B5802 /* ReaderInfoView.swift */; };
 		78EE0D772737B0C4005B5802 /* DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D762737B0C4005B5802 /* DeviceCardView.swift */; };
 		78EE0D792737B0D6005B5802 /* HistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE0D782737B0D6005B5802 /* HistoryCardView.swift */; };
@@ -65,6 +66,7 @@
 		78507C58273687E700E6A13D /* FelicaSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemUITests.swift; sourceTree = "<group>"; };
 		78507C5A273687E700E6A13D /* FelicaSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78507C6C273688EF00E6A13D /* ReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderMainView.swift; sourceTree = "<group>"; };
+		78D34ED1273AA81F002B6620 /* AccountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCardView.swift; sourceTree = "<group>"; };
 		78EE0D742737B04F005B5802 /* ReaderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderInfoView.swift; sourceTree = "<group>"; };
 		78EE0D762737B0C4005B5802 /* DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCardView.swift; sourceTree = "<group>"; };
 		78EE0D782737B0D6005B5802 /* HistoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCardView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				781D8488273820790071C9FF /* AccountMainView.swift */,
+				78D34ED1273AA81F002B6620 /* AccountCardView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				781D848D273972810071C9FF /* TabItem.swift in Sources */,
 				78507C40273687E200E6A13D /* ContentView.swift in Sources */,
 				78EE0D752737B04F005B5802 /* ReaderInfoView.swift in Sources */,
+				78D34ED2273AA81F002B6620 /* AccountCardView.swift in Sources */,
 				78507C3E273687E200E6A13D /* FelicaSystemApp.swift in Sources */,
 				781D847F2737D5590071C9FF /* DatabaseMainView.swift in Sources */,
 				78507C6D273688EF00E6A13D /* ReaderMainView.swift in Sources */,
