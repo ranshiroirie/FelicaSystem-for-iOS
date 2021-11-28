@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DeviceListCardView: View {
+    @State private var showModal = false
+    
     var body: some View {
         VStack{
             VStack(alignment: .leading, spacing: 16.0) {
@@ -25,13 +27,15 @@ struct DeviceListCardView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 VStack{
                     Button{
-                        
+                        self.showModal.toggle()
                     }label:{
                         Text("全ての登録機器を見る")
                             .font(.headline)
                             .foregroundColor(.black)
                             .padding(16.0)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    }.sheet(isPresented:$showModal){
+                        DeviceListModalView()
                     }
                 }
                 .background(Color("colorCardView"))

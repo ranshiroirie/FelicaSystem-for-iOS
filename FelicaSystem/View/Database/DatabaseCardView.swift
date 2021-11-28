@@ -82,3 +82,7 @@ struct DatabaseCardView_Previews: PreviewProvider {
         DatabaseCardView()
     }
 }
+
+//class colorDarabaseCardFont : Color {
+//    
+//}
